@@ -1,7 +1,12 @@
 .nav {
-    height: 60px;
-    background-color: limegreen;
+    height: 70px;
+    background-color: green;
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.3);
     color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 36px;
 }
 
 
