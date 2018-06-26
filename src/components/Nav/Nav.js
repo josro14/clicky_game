@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 
-export default class extends Component {
+const DEFAULT  = "Pick a block";
+
+export default class Nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: choose,
+            title: DEFAULT,
             score: 0,
             topScore: 0
         };
@@ -28,14 +30,14 @@ export default class extends Component {
 
     reset() {
         this.setState({
-            title: "Pick a block",
+            title: DEFAULT,
             score: 0
         })
     }
 
     render() {
         return (
-            <div>
+            <div className="nav">
                 <span>Minecraft Clicky Game</span>
                 <span>{this.state.title}</span>
                 <span>Score: {this.state.score} | Top Score: {this.state.topScore}</span>
